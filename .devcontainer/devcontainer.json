@@ -1,0 +1,29 @@
+{
+	"name": "Docker Minimal Python",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "..",
+	},
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"python.pythonPath": "/usr/bin/python3",
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true,
+		"python.formatting.autopep8Path": "/usr/py-utils/bin/autopep8",
+		"python.formatting.blackPath": "/usr/py-utils/bin/black",
+		"python.formatting.yapfPath": "/usr/py-utils/bin/yapf",
+		"python.linting.banditPath": "/usr/py-utils/bin/bandit",
+		"python.linting.flake8Path": "/usr/py-utils/bin/flake8",
+		"python.linting.mypyPath": "/usr/py-utils/bin/mypy",
+		"python.linting.pycodestylePath": "/usr/py-utils/bin/pycodestyle",
+		"python.linting.pydocstylePath": "/usr/py-utils/bin/pydocstyle",
+		"python.linting.pylintPath": "/usr/py-utils/bin/pylint"
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"ms-python.python"
+	],
+}
